@@ -1,0 +1,15 @@
+service: getContributions
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: eu-west-1
+
+# functions
+functions:
+  getContributions:
+    handler: src/index.handler
+
+# Serverless plugins
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
