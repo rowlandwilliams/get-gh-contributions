@@ -1,3 +1,4 @@
+import "dotenv/config";
 import fetch from "node-fetch";
 import { Contribution } from "./entity/Contribution";
 import { convertRawContributionDataToDays } from "./helpers/helpers";

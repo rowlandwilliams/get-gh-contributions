@@ -1,3 +1,5 @@
+import * as dotenv from "dotenv";
+dotenv.config();
 import { convertRawContributionDataToDays } from "./../helpers/helpers";
 import { Contribution } from "./../entity/Contribution";
 import { AppDataSource } from "./../data-source";
