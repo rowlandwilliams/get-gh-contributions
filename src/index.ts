@@ -4,6 +4,8 @@ import { Contribution } from "./entity/Contribution";
 import { convertRawContributionDataToDays } from "./helpers/helpers";
 import { AppDataSource } from "./data-source";
 
+console.log(process.env.DB_HOST, process.env.NODE_ENV, 'yoooo');
+
 export const handler = () => {
   AppDataSource.initialize()
     .then(async () => {
